@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <img src="{{ url_for('static', filename='img/my_img.png') }}"> -->
+    <title>Rock Paper Scissors !</title>
+    <style>
+        
+        #rook , #paper , #scissors {
+            display: inline-block;
+            margin-left: 140px;
+            margin-top: 150px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="rook"> <img src= "{{ url_for('static', filename='img/rook.png')}}" alt="scissors" height="258" width="265"> </div>
+    <div id="paper"> <img src= "{{ url_for('static', filename='img/paper.png')}}" alt="scissors" height="258" width="265"> </div>
+    <div id="scissors"> <img src= "{{ url_for('static', filename='img/scissors.png')}}" alt="scissors" height="258" width="265"> </div>
+
+    <form action='/process' method='post'>
+        <label for="pickone"> pick one : </label>
+        <select id="choise" name="values">
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        <input type='submit'>
+
+        <h2>You picked: {{session['choice']}}</h2>
+        
+        {% set t = ["rock","paper","scissors"] %}
+        {% set randm = range(0, 2) | random  %}
+        <!-- {{ randm }} -->
+        {% set string = t[randm] %}
+        <!-- {{ t[randm] }} -->
+
+        <h2>computer picked: {{string}}</h2>
+
+        {% if session['choice'] == string %}
+            <h3>Try again</h3>
+        {% elif session['choice'] == "paper" and string == "scissors" %}
+            <h3>You lost</h3>
+        {% elif session['choice'] == "paper" and string == "rock" %}
+            <h3>You Win</h3>
+        {% elif session['choice'] == "rock" and string == "paper" %}
+            <h3>You lost</h3>
+        {% elif session['choice'] == "rock" and string == "scissors" %}
+            <h3>You Win</h3>
+        {% elif session['choice'] == "scissors" and string == "paper" %}
+            <h3>You Win</h3>
+        {% elif session['choice'] == "scissors" and string == "rock" %}
+            <h3>You lost</h3>
+        
+
+        {% endif %}
+
+</body>
+
+</html>

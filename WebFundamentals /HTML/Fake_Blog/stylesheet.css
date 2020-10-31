@@ -1,0 +1,59 @@
+* {
+    border: 1px dotted crimson ;
+}
+
+body {
+   background-color: beige;
+   background-image: url(giphy_2.gif);
+   background-attachment: fixed;
+   background-repeat: repeat-y;
+   background-position: center top;
+   background-blend-mode: normal;
+   background-size: 500px;
+}
+
+a {
+    font-size: 25px;
+}
+
+span {
+    color : blue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    background-color: darkgrey;
+    background-clip: content-box;
+    display: block;
+    margin: 100px;
+}
+
+
+ul li {
+    display: inline;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    /* border:20px solid red; */
+    background-image: url(giphy.gif);
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-clip: padding-box;
+    
+
+}
+
+#intro {
+    width: 500px;
+    height: 200px;
+    overflow: scroll;
+    border: skyblue solid 2px;
+    background-color: lightblue;
+}

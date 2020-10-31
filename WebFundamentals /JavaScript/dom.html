@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="button">Click me</button>
+        <p>ارحححبب</p>
+        <h1 id="greeting"></h1>
+        <script>
+            var button = document.getElementById("button");
+            button.addEventListener("click",function() {
+                console.log("button clicked");
+                alert("مذذذاااااابي");
+                var newcontent = document.createElement("h1");
+                var node = document.createTextNode("مرحبا الوف");   
+                newcontent.appendChild(node);   
+                var element = document.getElementById("greeting");
+                element.appendChild(newcontent);
+            });
+        </script>
+    </body>
+</html>

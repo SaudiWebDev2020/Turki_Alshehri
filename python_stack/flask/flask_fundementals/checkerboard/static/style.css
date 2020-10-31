@@ -1,0 +1,22 @@
+* {
+    font-size: 0;
+}
+
+div .container {
+    text-align: center;
+    margin-top: 50px; 
+    font-size: 0;
+}
+
+div .box1 {
+    width: 40px; 
+    height: 40px; 
+    font-size: 0; 
+    background-color:rgb(22, 52, 82); 
+    display: inline-block;
+}
+
+
+div .box2 {
+    width: 40px; height: 40px; font-size: 0; background-color:rgb(170, 5, 18); display: inline-block;
+}

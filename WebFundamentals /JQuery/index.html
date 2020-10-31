@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script>
+            // var para = '<p> Hello, Developers </p>';
+            $(document).ready(function(){
+                var count = 0;
+                $('#show').click(function() {
+                    // $("#img").show(900);
+                    $('#img').show(900);
+                    $('#para').hide();
+                    count = 0;
+                })  
+                $('#next').click(function() {
+                    $('imgLink').show(900);
+                    $('#para').hide();
+                    count = 0;
+                })  
+                $('#hide').click(function() {
+                    $('#img').hide();
+                    if (count < 1) {
+                        $(this).after('<p id="para">Picture is hidden</p>');
+                        count++;
+                    }
+                })
+                $('#toggle').click(function() {
+                    $('#img').toggle();
+                    $('#para').hide();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <button id="show">show</button>
+        <button id="hide">hide</button>
+        <button id="next">next</button>
+        <button id="toggle">toggle</button>
+        <img id="img" src="desert.jpg" alt="" width="700" height="400">
+
+    </body>
+</html>

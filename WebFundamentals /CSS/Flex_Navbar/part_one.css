@@ -1,0 +1,13 @@
+.center-box {
+    background-color: blue;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.center-item {
+    background-color: cornsilk;
+    width: 60px;
+    height: 60px;
+}

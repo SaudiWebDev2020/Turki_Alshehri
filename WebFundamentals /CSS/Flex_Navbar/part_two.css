@@ -1,0 +1,35 @@
+div {
+    display: flex;
+    background-color: rgb(90, 146, 250);
+    min-height: 60px;
+    width: 700px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 50px;
+    height: 40px;
+    margin: 13px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: whitesmoke;
+    margin: 10px;
+    font-family: Arial;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 24px;
+    font-size: 11px;
+    font-family: Arial;
+}

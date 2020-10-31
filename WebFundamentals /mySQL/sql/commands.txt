@@ -1,0 +1,6 @@
+i used the following commands on twitter database:
+
+- select & join - select users.*, tweets.tweet from users join tweets on tweets.user_id = users.id;
+- delete - delete from twitter.tweets where user_id = 3;
+- update - update users set last_name = "Albakri"where id = 6;
+- insert - insert into tweets (tweet, user_id, created_at, updated_at) values ("hello", 1, now(), now())

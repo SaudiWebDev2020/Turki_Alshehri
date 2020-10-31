@@ -1,0 +1,150 @@
+* {
+    /* outline: 1px dotted red; */
+    margin: 0px auto;
+    border-radius: 2.5px;
+}
+#container {
+    width: 950px;
+    min-height: 500px;
+    background-color: cornsilk;
+}
+
+#top {
+    background-color: #f8f8f8;
+    width: 950px;
+    min-height: 60px;
+}
+    #top h1 {
+        display: inline-block;
+        margin: 15px;
+    }
+    #top h2 {
+        display: inline-block;
+        margin-left: 380px;
+    }
+
+#inner-container {
+    background-image: radial-gradient(circle, #654f5a, #654f5a, #221216); 
+    min-height: 500px;
+}
+#image {
+    width: 390px;
+    height: 300px;
+    display: inline-block;
+    margin: 25px;
+    border: 4px solid silver;
+    background-color: darkslategrey;
+    vertical-align: top;
+}
+
+#about {
+    width: 446px;
+    height: 300px;
+    display: inline-block;
+    margin: 25px;
+    background-color: rgb(241, 229, 248);
+    vertical-align: top;
+}
+    #about h3 {
+        height: 30px;
+        padding-left: 7px;
+        background-image: linear-gradient(#a9a8ae, #8e8c98, #a9a8ae);
+        padding-top: 7px;
+        color: snow;
+    }
+    #about p {
+        /* background-color: snow; */
+        margin: 10px;
+        font-size: 17px;
+    }
+    #about a {
+        margin: 12px;
+    }
+/* .bottom {
+    background-image: radial-gradient(circle, #654f5a, #654f5a, #221216); 
+    width: 950px;
+    min-height: 500px;
+} */
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 17px;
+    min-height: 600px;
+    background-color: rgb(241, 229, 248);
+
+}
+    .box h3 {
+        height: 30px;
+        padding-left: 7px;
+        background-image: linear-gradient(#a9a8ae, #8e8c98, #a9a8ae);
+        padding-top: 7px;
+        color: snow;
+
+
+    }
+    .box p {
+        /* background-color: snow; */
+        margin: 10px;
+        height: 180px;
+        font-size: 14px;
+        /* padding-bottom: 60px; */
+    }
+    .box h4 {
+        height: 30px;
+        padding-left: 7px;
+        background-image: linear-gradient(#a9a8ae, #8e8c98, #a9a8ae);
+        padding-top: 7px;
+        color: snow;
+    }
+    .box #technologies-logo {
+        margin:7px;
+    }
+    .box #technologies-logo img{
+        margin:5px;
+    }
+    .box a{
+        background-color: teal;
+        display: inline-block;
+        margin: 10px;
+        margin-left:99px;
+        border-radius: 5px;
+        min-width: 70px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: snow;
+    }
+
+    .box #middle-button {
+        margin-left:75px;
+    }
+
+#bottom {
+    background-color:#f8f8f8;
+    width: 950px;
+    height: 90px;
+}
+
+#contacts {
+    width: 250px;
+    height: 70px;
+    margin-top: 10px;
+    /* background-color: maroon; */
+}
+
+#container #bottom-p {
+    text-align: center;
+    padding-top: 9px;
+}
+
+#bottom .social_meda_logos {
+    margin-top:10px;
+    padding-left: 320px;
+}
+
+#bottom a{
+    font-style: italic;
+    color: black;
+}
+
